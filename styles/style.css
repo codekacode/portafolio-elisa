@@ -1,3 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+.wrapper {
+  background: radial-gradient(circle, rgba(241,169,214,1) 0%, rgba(235,188,153,1) 100%);
+  font-family: 'Oxygen', sans-serif;
+  padding: 0 10%;
+  
+}
+
+.navbar {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-options {
+  width: 400px;
+}
+
+.nav-options > a {
+  padding: 0 1rem;
+  cursor: pointer;
+  color: rgb(73, 72, 72);
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+.nav-options > a:hover {  
+  color: #000;
+}
+
+.btn {
+  border: 3px solid black;
+  border-radius: 25px;
+  padding: 0.7rem 1.1rem;
+  font-weight: 700;
+  background: rgb(67, 226, 184);
+}
+
 .btn-media{
   width: 40px;
   height: 40px;
