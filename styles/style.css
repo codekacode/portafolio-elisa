@@ -13,7 +13,7 @@ body {
 .wrapper {
   background: radial-gradient(circle, rgba(241,169,214,1) 0%, rgba(235,188,153,1) 100%);
   font-family: 'Oxygen', sans-serif;
-  padding: 0 10%;
+  padding: 0 15%;
   
 }
 
@@ -130,22 +130,22 @@ body {
   display: flex;
 }
 
-.project-right {
+.project-img {
   width: 60%;
   display: flex;
   align-items: center;
   justify-content: flex-end;  
 }
 
-.project-right > img {
+.project-img > img {
   width: 90%;
 }
-.project-left {
+.project-text {
   width: 40%;
   padding: 8% 0;
 }
 
-.project-left > h3 {
+.subtitle {
   border: 1px solid black;
   padding: 1rem;
   font-size: 2rem;
@@ -165,4 +165,44 @@ body {
 
 .btn-code {
   background: transparent;
+}
+
+.opinion {
+  margin: 10% 0;
+  background: rgba(246, 193, 179, .5) ;
+  border-radius: 20px;
+  /* border-width: 1px 0 0 1px;
+  border-style: solid;
+  border-image-slice: 2;
+  border-image-source: linear-gradient(to right, white , rgba(246, 193, 179, .5)); */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 8% 15% ;
+  text-align: center;
+}
+
+.opinion-message > p:first-child {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.opinion-message > p:nth-child(2n) {
+  padding-top: 5%;
+  font-size: 1.5rem;
+  color: rgb(130, 101, 94);
+  font-weight: 700;
+}
+
+.project-other {
+  justify-content: flex-start;
+}
+
+.form {
+
+}
+
+.subtitle-form {
+
 }
