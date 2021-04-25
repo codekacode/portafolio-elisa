@@ -101,3 +101,27 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.message-welcome {
+  padding: 15% ;
+  text-align: center;
+  line-height: 55px;
+  line-height: 4rem;
+}
+
+.message-welcome > p:first-child {
+  font-size: 2.5rem;
+}
+
+.message-welcome > p:nth-child(2n) {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 6rem;
+}
+
+.message-welcome > a {
+  height: 50px;
+  width: 100px;
+  font-size: 4rem;
+  line-height: 6rem;
+}
