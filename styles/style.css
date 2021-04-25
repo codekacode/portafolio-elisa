@@ -29,7 +29,7 @@ body {
 }
 
 .nav-options > a {
-  padding: 0 1rem;
+  padding: 0 2%;
   cursor: pointer;
   color: rgb(73, 72, 72);
   font-weight: 700;
@@ -149,10 +149,9 @@ body {
 .subtitle {
   border: 1px solid black;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: rgb(67, 226, 184);
   background: #000;
-  width: 360px;
   box-shadow: -7px 7px #fff;
   margin: 2rem 0;
 
@@ -224,9 +223,9 @@ body {
   padding: 12px;
 }
 
-.subtitle-form {
+/* .subtitle-form {
   width: 100%;
-}
+} */
 
 .btn-form {
   width: 100%;
@@ -240,6 +239,46 @@ footer {
   align-items: center;
 }
 
-.footer-message {
+@media only screen and (max-width: 1024px) {
+  * {
+    font-size: 12px;
+  }
+  .welcome {
+    display: block;
+    width: 100%;
+  }
+  .wrapper {
+    padding: 0 10%;
+  }
+  .welcome-left {
+    width: 100%;
+    text-align: center;
+    padding: 0 15%;
+  }
+  .welcome-right {
+    width: 100%;
+    justify-content:center;
+  }
+  .nav-options {
+    width: 300px;
+  }
+  .footer-message {
+    width: 300px;
+    text-align: center;
+  }
 
+}
+
+@media only screen and (max-width: 768px) {
+
+  .nav-options {
+    display: none;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    display: none;
+  }
 }
