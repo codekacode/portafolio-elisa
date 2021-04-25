@@ -8,6 +8,7 @@
 
 body {
   width: 100vw;
+  min-width: 350px;
 }
 
 .wrapper {
@@ -46,6 +47,10 @@ body {
   padding: 0.7rem 1.1rem;
   font-weight: 700;
   background: rgb(67, 226, 184);
+}
+
+.btn-hidden {
+  display: none;
 }
 
 .welcome {
@@ -171,10 +176,6 @@ body {
   margin: 10% 0;
   background: rgba(246, 193, 179, .5) ;
   border-radius: 20px;
-  /* border-width: 1px 0 0 1px;
-  border-style: solid;
-  border-image-slice: 2;
-  border-image-source: linear-gradient(to right, white , rgba(246, 193, 179, .5)); */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -223,10 +224,6 @@ body {
   padding: 12px;
 }
 
-/* .subtitle-form {
-  width: 100%;
-} */
-
 .btn-form {
   width: 100%;
 }
@@ -240,12 +237,27 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
-  * {
-    font-size: 12px;
-  }
   .welcome {
-    display: block;
+    display: flex;
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+  }
+  .welcome> div:nth-child(1) {
+    order: 2;
+  }
+  .welcome> div:nth-child(2) {
+    order: 1;
+  }
+  .btn-download {
+    display: none;
+  }
+  .btn-hidden {
+    display: inline;
+  }
+  * {
+    font-size: 11px;
   }
   .wrapper {
     padding: 0 10%;
@@ -262,6 +274,24 @@ footer {
   .nav-options {
     width: 300px;
   }
+  .project {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+  }
+  .project-text {
+    order: 2;
+    width: 70%;
+  }
+  .project-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+    width: 90%;
+  }
   .footer-message {
     width: 300px;
     text-align: center;
@@ -270,7 +300,9 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-
+  .btn-hidden {
+    display: inline;
+  }
   .nav-options {
     display: none;
   }
@@ -278,7 +310,13 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  .logo {
+  footer > .logo {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  *{
+    font-size: 10px;
   }
 }
